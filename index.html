@@ -1,1 +1,57 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+
+<head>
+  <title>Ecommerce store</title>
+</head>
+<body>
+
+    <h1>Call us for a new ecommerce store at <span class="phNumber"></span>
+    </h1>
+
+  <!-- Global site tag (gtag.js) - Google Ads: 744073553 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-744073553"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-744073553');
+  </script>
+
+  <script type="text/javascript">
+    function GetNumber(number, tagId, firstTime) {
+      if (firstTime) {
+        window.pnumber = number;
+      }
+    }
+    
+    (function(e,d) {
+        //Ringba.com phone number tracking
+        var ringba_com_tag="JS39a402ac31db462f8193a44bb3947762";
+        var _sc = d.getElementsByTagName('script'), _s = _sc[_sc.length - 1];
+        e._rgba = e._rgba || { q: [] }; e._rgba.q.push({ tag: ringba_com_tag, cb: GetNumber, numberClass: "phNumber", render: false, script: _s });
+        if (!(e._rgba.loading = !!e._rgba.loading)) {
+            var sc = d.createElement('script'); sc.type = 'text/javascript'; sc.async = true;
+            sc.src = '//displayabhi.ngrok.io/dist/js_v2/min/ringba.com.js';
+            var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc, s);
+            e._rgba.loading = true;
+        }
+  })(window,document);
+  </script>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141225325-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-141225325-1');
+  </script>
+
+
+
+</body>
+
+
