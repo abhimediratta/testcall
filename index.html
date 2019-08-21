@@ -48,12 +48,13 @@
 
     (function(e,d) {
         //Ringba.com phone number tracking
-        var ringba_com_tag="JS3a4162d7cd1b45b6b99aac66a9b2dcd3";
+        var ringba_com_tag="JS852ca9cb55884e7f82e0b7aa35553345";
         var _sc = d.getElementsByTagName('script'), _s = _sc[_sc.length - 1];
         e._rgba = e._rgba || { q: [] }; e._rgba.q.push({ tag: ringba_com_tag, cb: GetNumber, numberClass: "phNumber", render: false, script: _s });
         if (!(e._rgba.loading = !!e._rgba.loading)) {
             var sc = d.createElement('script'); sc.type = 'text/javascript'; sc.async = true;
-            sc.src = '//displayabhi.ngrok.io/dist/js_v2/min/ringba.com.js';
+            // sc.src = '//displayabhi.ngrok.io/dist/js_v2/min/ringba.com.js';
+            sc.src = '//js.callcdn.com/js_v2/min/ringba.com.js';
             var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc, s);
             e._rgba.loading = true;
         }
